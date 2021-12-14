@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<style>
+    @media screen and (min-width:400px) {
+        body {
+            font-size: 12px;
+            background: yellowgreen;
+        }
+    }
+    
+    body {
+        padding-left: 20%;
+        padding-right: 20%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        background: linear-gradient(pink, lightblue);
+    }
+    
+    .formContainer {
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .formFields {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        padding-right: 30px;
+        border: 1px solid black;
+    }
+    
+    .inputBoxes {
+        padding: 12px;
+        flex: 4;
+    }
+    
+    .formLable {
+        flex: 2;
+    }
+    
+    .moveToRight {
+        justify-content: end;
+    }
+    
+    .niceButton {
+        color: white;
+        background: #4d4d4d;
+        padding: 7px 27px;
+    }
+    
+    .niceButton:hover {
+        background: linear-gradient(150deg, pink, lightblue);
+        cursor: progress;
+    }
+    
+    body::first-line {
+        color: red;
+    }
+    
+    .p ::first-line {
+        color: red;
+    }
+    
+     ::marker {
+        color: red;
+    }
+    
+     ::selection {
+        color: red;
+        background: linear-gradient(red orangered deepskyblue);
+    }
+</style>
+
+<body>
+    <div class="formContainer">
+        <p style="font-size: 27px; ">Registration form</p>
+        <form style="display: flex;flex-direction: column;">
+            <div class="formFileds">
+                <div style="flex: 2;">
+                </div>
+                <label for="" class="formlabel">
+                    First Name:
+                </label>
+                <input type="text" placeholder="first Name" class="inputBoxes">
+            </div>
+            <div class="formFileds">
+                <div style="flex: 2;">
+                </div>
+                <label for="" class="formlabel">
+                    Last Name:
+                </label>
+                <input type="text" placeholder="Last Name" class="inputBoxes">
+            </div>
+            <div class="formFileds">
+                <div style="flex: 2;">
+                </div>
+                <label class="formlabel">
+                    Email:
+                </label>
+                <input type="text" placeholder="Email" class="inputBoxes">
+            </div>
+            <div class="formFileds moveToRight">
+                <input type="Submit" value="Rigister" class="niceButton">
+            </div>
+        </form>
+    </div>
+
+    <div style="display: flex;">
+        <ul>
+            <li>uday</li>
+            <li>uday</li>
+            <li>uday</li>
+            <li>uday</li>
+        </ul>
+        <ol>
+            <li>uday</li>
+            <li>uday</li>
+            <li>uday</li>
+            <li>uday</li>
+        </ol>
+    </div>
+</body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+</head>
+<style>
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 50;
+    }
+</style>
+
+<body>
+    <h1>Using CSS to style an HTML Form</h1>
+    <div>
+        <form action="">
+            <label for="fname">FirstName</label>
+            <input type="text" id="fname" class="FirstName" placeholder="Your Name">
+            <label for="lname">LastName</label>
+            <input type="text" id="lname" class="LastName" placeholder="Your LastName">
+            <label for="Country">Country</label>
+            <select name="Country" id="Country">
+                <option value="India">India</option>
+                <option value="America">America</option>
+                <option value="Japan">Japan</option>
+                <input type="Submit" value="Submit">
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>

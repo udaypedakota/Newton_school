@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        padding: 0% 15%;
+    }
+    
+    .topbar {
+        background-color: cornflowerblue;
+        color: white;
+        padding: 15px;
+    }
+    
+    .items {
+        padding: 10px;
+    }
+    
+    .items ul {
+        padding: 0;
+    }
+    
+    li {
+        background-color: violet;
+        color: white;
+        padding: 8px;
+        margin-top: 20px;
+    }
+    
+    .items2 ul {
+        text-align: center;
+        padding: 0px
+    }
+    
+    .items {
+        padding: 10px;
+    }
+    
+    .items2 li {
+        margin-top: 0px;
+    }
+    
+    .post {
+        padding: 15px;
+    }
+    
+    .colRow::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    [class*="col-"] {
+        float: left;
+    }
+    
+    .footer {
+        background-color: #0099cc;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .col-1 {
+        width: 8.33%;
+    }
+    
+    .col-2 {
+        width: 16.66%;
+    }
+    
+    .col-3 {
+        width: 25%;
+    }
+    
+    .col-4 {
+        width: 33.33%;
+    }
+    
+    .col-5 {
+        width: 41.66%;
+    }
+    
+    .col-6 {
+        width: 50%;
+    }
+    
+    .col-7 {
+        width: 58.33%;
+    }
+    
+    .col-8 {
+        width: 66.66%;
+    }
+    
+    .col-9 {
+        width: 75%;
+    }
+    
+    .col-10 {
+        width: 83.33%;
+    }
+    
+    .col-11 {
+        width: 91.66%;
+    }
+    
+    .col-12 {
+        width: 100%;
+    }
+    
+    @media only screen and (max-width:768px) {
+        [class*="col-"] {
+            width: 100%;
+        }
+        body {
+            padding: 5%;
+        }
+    }
+</style>
+
+<body>
+    <div class="topbar">
+        <h1>Pushpa</h1>
+    </div>
+    <div class="colRow">
+        <div class="items col-3">
+            <h1>Persons Name</h1>
+            <ul>
+                <li>Uday Pedakota</li>
+                <li>Uday Pedakota</li>
+                <li>Uday Pedakota</li>
+                <li>Uday Pedakota</li>
+            </ul>
+        </div>
+        <div class="col-6 post">
+            <h1>Summary</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quos magni quod? Quaerat possimus quibusdam beatae voluptates aperiam, similique soluta voluptatibus iste quia harum laboriosam quisquam provident neque accusantium eos veniam nihil facilis
+                dolore. Commodi eaque recusandae dolor possimus hic .
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem quas consequuntur corrupti qui similique enim nihil ipsa fugit quos. Possimus, unde recusandae officiis blanditiis quo alias! Non perferendis repellendus iusto odit blanditiis tenetur.
+                Laudantium veniam id, veritatis fugiat quos, sint reiciendis, blanditiis tempora provident in harum accusamus rerum magni?
+            </p>
+        </div>
+        <div class="items2 col-3">
+            <h1>Persons Name</h1>
+            <ul>
+                <li>
+                    <h2>Person 1</h2>
+                    Details about Item 1
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>Person 2</h2>
+                    Details about Item 2
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>Person 3</h2>
+                    Details about Item 3
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <h4>This is Footer</h4>
+    </div>
+    <button onclick="clickMe()">change color & Text</button>
+    <script>
+        function clickme() {
+            document.getElementsByClassName('footer')[0].innerText = 'This Is Uday'
+            document.getElementsByClassName('footer')[0].style.backgroundcolor = 'red';
+
+        }
+    </script>
+</body>
+
+</html>
